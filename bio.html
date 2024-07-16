@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Centered Image</title>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Чтобы элементы располагались вертикально */
+  }
+  .image {
+    position: absolute;
+    left: 500.5px;
+    top: 65px;
+    width: 150px;
+    height: auto;
+  }
+  .wb {
+    position: absolute;
+    right: 500.5px;
+    top: 94.5px;
+    width: 261px;
+    height: 96px;
+  }
+  .tele {
+    position: absolute;
+    right: 500.5px;
+    top: 188px;
+  }
+  .games {
+     position: absolute;
+     right: 520.5px;
+     top: 280px;
+     width: 80px;
+     height: 80px;
+  }
+  .hidden-gif {
+    display: none;
+    position: absolute;
+    top: 265px;
+    right: 440px;
+    width: 80px;
+    height: 80px;
+  }
+  .games:hover + .hidden-gif {
+    display: block;
+  }
+  .deals {
+     position: absolute;
+     right: 630.5px;
+     top: 265px;
+     width: 300px;
+     height: 109px;
+  }
+  .github {
+   position: absolute;
+   right: 640.5px;
+   top: 285px;
+   width: 132px;
+   height: 40px;
+  }
+   .insta {
+   position: absolute;
+   right: 790.5px;
+   top: 325px;
+   width: 132px;
+   height: 40px;
+  }
+  .links {
+    margin-top: 450px; /* Отступ сверху */
+    color: yellow; /* Желтый цвет текста */
+    text-align: center; /* Центрирование текста */
+  }
+  .links a {
+    color: yellow; /* Цвет ссылок */
+    text-decoration: underline; /* Подчеркивание ссылок */
+    margin: 0 10px; /* Отступ между ссылками */
+  }
+</style>
+</head>
+<body>
+  <img class="image" src="https://telegra.ph/file/858238d3aa00e921a67fa.png">
+  <img class="wb" src="https://telegra.ph/file/9e1a2f48c8f648fbb5647.gif">
+  <img class="games" src="https://telegra.ph/file/8f5df3f2c92cd54f36044.gif">
+  <img class="hidden-gif" src="https://telegra.ph/file/ce2e0e3b81b1bd990c3b7.gif" alt="Hover GIF">
+  <img class="deals" src="https://telegra.ph/file/8c542425e3e92aa630b3d.png">
+  <a href="https://github.com/aleksfolt" target="_blank">
+    <img class="github" src="https://telegra.ph/file/9295b5327ec9bac1618f8.gif">
+  </a>
+  <a href="https://www.instagram.com/vosmii.nogel/" target="_blank">
+    <img class="insta" src="https://telegra.ph/file/da48bbcdcd6d068365228.gif">
+  </a>
+  <a href="https://t.me/aieksfolt" target="_blank">
+    <img class="tele" src="https://telegra.ph/file/0ae25495427ee54535da3.png">
+  </a>
+  <div class="links">
+    <a href="https://t.me/biofolt" target="_blank">Telegram Bio</a> |
+    <a href="https://tiktok.com/@aieksfolt" target="_blank">TikTok</a> |
+    <a href="https://signal.me/#eu/8EdNdedlVZvVcy7EjoJe_lka_qLSX7vlxr1EpWxXlT1WsF05HWVEYaDExcAz3wBH" target="_blank">Signal</a>
+  </div>
+</body>
+</html>
