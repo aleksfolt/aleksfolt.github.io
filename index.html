@@ -122,7 +122,7 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <audio autoplay loop>
+    <audio id="audioElement">
         <source src="mysterious-horror-intro-111446.aac" type="audio/aac">
         Your browser does not support the audio tag.
     </audio>
@@ -138,5 +138,20 @@
     </div>
     <div class="info-icon">i</div>
     <div class="tooltip">=AleksFolt, OneMaru</div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audioElement');
+
+            if (!audio.paused) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+
+            audio.play();
+        }
+
+        document.addEventListener('click', playAudio);
+    </script>
 </body>
 </html>
