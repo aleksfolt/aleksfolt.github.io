@@ -187,15 +187,14 @@
     </div>
 
     <script>
+        let audioPlayed = false;
+
         function playAudio() {
-            var audio = document.getElementById('audioElement');
-
-            if (!audio.paused) {
-                audio.pause();
-                audio.currentTime = 0;
+            if (!audioPlayed) {
+                var audio = document.getElementById('audioElement');
+                audio.play();
+                audioPlayed = true;
             }
-
-            audio.play();
         }
 
         function toggleInfoMenu() {
@@ -213,7 +212,7 @@
             }
         }
 
-        document.addEventListener('click', playAudio);
+        document.addEventListener('click', playAudio, { once: true });
     </script>
 </body>
 </html>
